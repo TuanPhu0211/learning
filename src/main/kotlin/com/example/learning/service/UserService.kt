@@ -3,6 +3,7 @@ package com.example.learning.service
 import com.example.learning.model.User
 
 interface UserService {
+    fun findById(userId: Long): User?
     fun findByUsername(username: String): User?
     fun findByEmail(email: String): User?
     fun save(user: User): User
